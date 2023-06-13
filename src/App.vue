@@ -24,6 +24,7 @@ export default {
 
 <template>
   <PageHeader :nav_link="store.links" />
+  <PageMain />
 </template>
 
 <style lang="scss">
