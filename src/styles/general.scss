@@ -3,6 +3,7 @@
 // importiamo Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+
 // regole generali
 * {
     margin: 0;
@@ -10,6 +11,15 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 img {
     max-width: 100%;
+}
+
+.container {
+    width: 70%;
 }
