@@ -145,6 +145,10 @@ main {
                     width: 90%;
                     margin: 20px auto;
 
+                    input {
+                        border-radius: 20px;
+                    }
+
                     button {
                         color: white;
                         background-color: rgb(45, 70, 73);
