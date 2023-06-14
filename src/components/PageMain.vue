@@ -14,7 +14,7 @@ export default {
 <template>
     <main>
         <!-- jumbotron -->
-        <div class="jumbotron">
+        <div id="jumbotron">
             <div class="container jumbo">
                 <div class="text_jumbo">
 
@@ -73,11 +73,44 @@ export default {
 
         </div>
 
+        <!-- sezione presentazione -->
+        <section id="presentation">
+            <div class="container">
+                <div class="row text-center align-items-center">
+                    <div class="col-5">
+                        <div class="presentation_signature">
+                            <h2>Hey there, my name is John Doe. I'm the founder of the Brain Academy.</h2>
+                            <img src="/sign.jpg" alt="signature">
+                        </div>
+                    </div>
+                    <div class="col-7 text-start">
+                        <div class="presentation_text">
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy my whole heart. I am alone, and feel the charm of existence in this
+                                spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so
+                                absorbed in the exquisite sense of mere tranquil existence, that I neglet my talents. When,
+                                while the lovely valley teems with vapour around me, and the meridian sun strikes the upper
+                                surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the
+                                inner sanctuary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section></section>
+
+
         <section></section>
+
+
         <section></section>
+
+
         <section></section>
-        <section></section>
+
+
         <section></section>
     </main>
 </template>
@@ -87,7 +120,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 main {
-    .jumbotron {
+    #jumbotron {
         height: 650px;
         background-image: url('/jumbotron.jpg');
         background-size: cover;
@@ -146,13 +179,15 @@ main {
                     margin: 20px auto;
 
                     input {
-                        border-radius: 20px;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
                     }
 
                     button {
                         color: white;
                         background-color: rgb(45, 70, 73);
-                        border-radius: 20px;
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
                     }
                 }
             }
@@ -167,6 +202,36 @@ main {
                 }
             }
         }
+    }
+
+    #presentation {
+        height: 450px;
+
+        .container {
+            height: 100%;
+
+            .row {
+                height: 100%;
+            }
+
+            .presentation_signature {
+
+                width: 80%;
+                margin: auto;
+
+                h2 {
+                    text-align: left;
+                    font-weight: bold;
+                }
+            }
+
+            .presentation_text {
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+
     }
 }
 </style>
