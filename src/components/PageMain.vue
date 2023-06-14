@@ -378,8 +378,38 @@ export default {
             </div>
         </section>
 
+        <!-- sezione students say -->
+        <section id="what_students_say">
+            <div class="container text-center">
 
-        <section></section>
+                <h1>What Students Say</h1>
+
+                <div class="students_carousel">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <div class="students_img">
+                        <div class="first_student_img">
+                            <img src="/student_1.jpg" alt="">
+                        </div>
+                        <div class="second_student_img">
+                            <img src="/student_2.jpg" alt="">
+                        </div>
+                        <div class="third_student_img">
+                            <img src="/student_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="text_studens_say">
+                    <h5>Paints of the Future</h5>
+                    <img src="/five_star_rating.svg" alt="">
+                    <p>The response to your MasterStudy has been really overwhelming! Those who participated in the workshop
+                        are spreading the word here on campus and the "buzz" is on. The VP of instruction wants you to come
+                        back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. Oour
+                        President told me Masterstudy needs to be the cornerstone of our success program."</p>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -695,6 +725,58 @@ main {
                 }
 
 
+            }
+        }
+    }
+
+    #what_students_say {
+        height: 550px;
+        @include flex-center;
+
+        .container {
+
+            width: 40%;
+            margin: auto;
+
+            h1 {
+                font-weight: bold;
+            }
+
+            .students_carousel {
+                @include flex-around-center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                .students_img {
+                    @include flex-around-center;
+                    width: 50%;
+
+                    .first_student_img,
+                    .second_student_img,
+                    .third_student_img {
+
+                        img {
+                            border-radius: 50px;
+                        }
+                    }
+
+                    .first_student_img,
+                    .third_student_img {
+                        width: 20%;
+                    }
+                }
+            }
+
+            .text_studens_say {
+                h5 {
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+
+                img {
+                    max-width: 20%;
+                    margin-bottom: 30px;
+                }
             }
         }
     }
