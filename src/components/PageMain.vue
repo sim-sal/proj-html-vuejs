@@ -334,8 +334,49 @@ export default {
             </div>
         </section>
 
-
-        <section></section>
+        <!-- sezione statistiche -->
+        <section id="stats">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <div class="container_stats">
+                            <i class="fa-solid fa-user-group fa-flip-horizontal"></i>
+                            <div>
+                                <h2>3195</h2>
+                                <span>Online Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="container_stats">
+                            <i class="fa-solid fa-film"></i>
+                            <div>
+                                <h2>23</h2>
+                                <span>Online Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="container_stats">
+                            <i class="fa-regular fa-image"></i>
+                            <div>
+                                <h2>437</h2>
+                                <span>Online Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="container_stats">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <div>
+                                <h2>1440</h2>
+                                <span>Online Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <section></section>
@@ -559,7 +600,7 @@ main {
             .book_order_right {
                 width: 50%;
                 height: 500px;
-                background-image: url('../../public/book.png');
+                background-image: url('/book.png');
                 background-position: bottom;
                 background-size: 90%;
                 background-repeat: no-repeat;
@@ -620,6 +661,42 @@ main {
         }
 
 
+    }
+
+    #stats {
+        height: 500px;
+        background-image: url('/stats_bg.jpg');
+        background-size: cover;
+
+        .container {
+            height: 100%;
+
+            .row {
+                height: 100%;
+
+                .container_stats {
+
+                    @include flex-center-center;
+                    color: white;
+
+                    i {
+                        font-size: 50px;
+                    }
+
+                    div {
+                        margin-left: 20px;
+
+                        h2 {
+                            color: $footer-color;
+                            font-weight: bold;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+
+            }
+        }
     }
 }
 </style>
