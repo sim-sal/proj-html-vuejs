@@ -245,8 +245,19 @@ export default {
             </div>
         </section>
 
-
-        <section></section>
+        <!-- sezione book order -->
+        <section id="book_order">
+            <div class="container">
+                <div class="book_order_left text-center">
+                    <h1>Get My Exclusive Investing Book just fot $19.50</h1>
+                    <p>Vestibulum imentum eu urna vel cursus. Aenean vehicula quam quam, vitae pellentesque urna elementum
+                        cursus.</p>
+                    <img src="../../public/amazon.png" alt="">
+                </div>
+                <div class="book_order_right">
+                </div>
+            </div>
+        </section>
 
 
         <section></section>
@@ -439,6 +450,48 @@ main {
                 margin-top: 50px;
             }
         }
+
+    }
+
+    #book_order {
+        height: 500px;
+        background-image: url('/book_order_bg.jpg');
+        background-size: cover;
+
+        .container {
+
+            display: flex;
+            @include flex-center;
+
+            .book_order_left {
+                width: 50%;
+
+                h1 {
+                    color: $footer-color;
+                    font-weight: bold;
+                }
+
+                p {
+                    color: white;
+                    font-size: 25px;
+                    font-style: italic;
+                }
+
+                img {
+                    width: 35%;
+                }
+            }
+
+            .book_order_right {
+                width: 50%;
+                height: 500px;
+                background-image: url('../../public/book.png');
+                background-position: bottom;
+                background-size: 90%;
+                background-repeat: no-repeat;
+            }
+        }
+
 
     }
 }
