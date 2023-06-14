@@ -252,15 +252,87 @@ export default {
                     <h1>Get My Exclusive Investing Book just fot $19.50</h1>
                     <p>Vestibulum imentum eu urna vel cursus. Aenean vehicula quam quam, vitae pellentesque urna elementum
                         cursus.</p>
-                    <img src="../../public/amazon.png" alt="">
+                    <img src="/amazon.png" alt="">
                 </div>
                 <div class="book_order_right">
                 </div>
             </div>
         </section>
 
+        <!-- sezione why my courses -->
+        <section id="why_my_courses">
+            <div class="container">
+                <h1 class="text-center">Why my Courses?</h1>
+                <div class="row row-cols-2 row-cols-lg-2 g-0 gy-4 gx-4 align-items-center">
+                    <div class=" col-md-6 ms-md-6">
+                        <div class="card_wmc text-start">
+                            <div class="line"></div>
+                            <div class="card_wmc_icon text-center">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="card_wmc_text">
+                                <h5>How to be a DJ? Make Electronic Music</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid architecto
+                                    quibusdam
+                                    laboriosam distinctio culpa repudiandae, corrupti error aut, rerum numquam atque
+                                    accusantium
+                                    maxime itaque nesciunt. Ex quidem est debitis.</p>
+                            </div>
 
-        <section></section>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <div class="card_wmc text-start">
+                            <div class="line"></div>
+                            <div class="card_wmc_icon text-center">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="card_wmc_text">
+                                <h5>How to be a DJ? Make Electronic Music</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid architecto
+                                    quibusdam
+                                    laboriosam distinctio culpa repudiandae, corrupti error aut, rerum numquam atque
+                                    accusantium
+                                    maxime itaque nesciunt. Ex quidem est debitis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <div class="card_wmc text-start">
+                            <div class="line"></div>
+                            <div class="card_wmc_icon text-center">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                            </div>
+                            <div class="card_wmc_text">
+                                <h5>How to be a DJ? Make Electronic Music</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid architecto
+                                    quibusdam
+                                    laboriosam distinctio culpa repudiandae, corrupti error aut, rerum numquam atque
+                                    accusantium
+                                    maxime itaque nesciunt. Ex quidem est debitis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <div class="card_wmc text-start">
+                            <div class="line"></div>
+                            <div class="card_wmc_icon text-center">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div class="card_wmc_text">
+                                <h5>How to be a DJ? Make Electronic Music</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid architecto
+                                    quibusdam
+                                    laboriosam distinctio culpa repudiandae, corrupti error aut, rerum numquam atque
+                                    accusantium
+                                    maxime itaque nesciunt. Ex quidem est debitis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
 
         <section></section>
@@ -392,11 +464,13 @@ main {
     #new_courses {
         height: 1000px;
         background-color: $primary-section-color;
-        display: flex;
-        align-items: center;
+        @include flex-center;
 
         .container {
-            height: 80%;
+
+            .row {
+                padding-top: 30px;
+            }
 
             h1 {
                 font-weight: bold;
@@ -489,6 +563,59 @@ main {
                 background-position: bottom;
                 background-size: 90%;
                 background-repeat: no-repeat;
+            }
+        }
+
+
+    }
+
+    #why_my_courses {
+        height: 700px;
+        @include flex-center;
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .row {
+            padding-top: 30px;
+
+            .card_wmc {
+
+                box-shadow: 2px 2px 15px rgb(207, 207, 207);
+                @include flex-center;
+                min-height: 200px;
+
+                .line {
+                    min-height: 200px;
+                    width: 5px;
+                    background-color: $footer-color;
+                }
+
+                .card_wmc_icon {
+                    width: 25%;
+                    color: $footer-color;
+
+                    i {
+                        font-size: 40px;
+                    }
+                }
+
+                .card_wmc_text {
+
+                    width: 65%;
+
+                    h5 {
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        color: rgb(143, 143, 143);
+                    }
+                }
+
+
             }
         }
 
