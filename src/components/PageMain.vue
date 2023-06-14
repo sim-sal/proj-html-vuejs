@@ -98,8 +98,152 @@ export default {
             </div>
         </section>
 
+        <!-- sezione new courses -->
+        <section id="new_courses">
+            <div class="container">
+                <h1 class="text-center">New Courses</h1>
 
-        <section></section>
+                <div class="row row-cols-2 row-cols-lg-3 g-0 gy-4 gx-4 align-items-center">
+                    <div class=" col-md-6 ms-md-6">
+                        <img src="/new_courses_1.jpeg" alt="">
+                        <div class="card_text text-center">
+                            <h5>How to be a DJ? Make Electronic Music</h5>
+                            <span>Electronic</span>
+                            <hr>
+                            <div class="card_icons">
+                                <div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span> Advanced</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span> 8 Lectures</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span> 6 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <img src="/new_courses_2.png" alt="">
+                        <div class="card_text text-center">
+                            <h5>Nvidia and UE4 Technlogies Practice</h5>
+                            <span>Nvidia</span>
+                            <hr>
+                            <div class="card_icons">
+                                <div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span> Advanced</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span> 8 Lectures</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span> 6 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <img src="/new_courses_3.jpeg" alt="">
+                        <div class="card_text text-center">
+                            <h5>Fashion Photography from professional</h5>
+                            <span>Fashion</span>
+                            <hr>
+                            <div class="card_icons">
+                                <div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span> Advanced</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span> 8 Lectures</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span> 6 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <img src="/new_courses_4.jpeg" alt="">
+                        <div class="card_text text-center">
+                            <h5>Design Instruments for Communication</h5>
+                            <span>Communication</span>
+                            <hr>
+                            <div class="card_icons">
+                                <div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span> Advanced</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span> 8 Lectures</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span> 6 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <img src="/new_courses_5.jpg" alt="">
+                        <div class="card_text text-center">
+                            <h5>Make your Concept Right and Beautiful</h5>
+                            <span>Art</span>
+                            <hr>
+                            <div class="card_icons">
+                                <div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span> Advanced</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span> 8 Lectures</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span> 6 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-md-6">
+                        <img src="/new_courses_6.jpeg" alt="">
+                        <div class="card_text text-center">
+                            <h5>Road Bike Manual or How to Be a Champion.</h5>
+                            <span>Bicycling</span>
+                            <hr>
+                            <div class="card_icons">
+                                <div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span> Advanced</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-list-ul"></i>
+                                    <span> 8 Lectures</span>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span> 6 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center">
+                    <button id="new_courses_button">LOAD MORE</button>
+                </div>
+            </div>
+        </section>
 
 
         <section></section>
@@ -231,6 +375,70 @@ main {
             }
         }
 
+
+    }
+
+    #new_courses {
+        height: 1000px;
+        background-color: $primary-section-color;
+        display: flex;
+        align-items: center;
+
+        .container {
+            height: 80%;
+
+            h1 {
+                font-weight: bold;
+            }
+
+            .card_text {
+                background-color: white;
+
+                h5 {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                    font-weight: bold;
+                    width: 85%;
+                    margin: auto;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: rgb(156, 156, 156);
+                }
+
+                hr {
+                    width: 90%;
+                    margin: auto;
+                    color: rgb(156, 156, 156);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .card_icons {
+                    @include flex-around;
+                    padding-bottom: 10px;
+
+                    i {
+                        color: $footer-color;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        color: black;
+                    }
+                }
+            }
+
+            #new_courses_button {
+                background-color: $footer-color;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 7px 15px;
+                margin-top: 50px;
+            }
+        }
 
     }
 }
