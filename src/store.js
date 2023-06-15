@@ -24,13 +24,15 @@ export const store = reactive({
         }
     ],
 
-    footerContent: [
+    about: [
         {
             title: "ABOUT",
             text: "Masterstudy is Education WordPress theme featured by Learning Management System (LMS) for online education.",
             developed: "Developed by StylemixThemes.",
             facebookIcon: `<i class="fa-brands fa-facebook"></i>`,
-        },
+        }
+    ],
+    contact: [
         {
             title: "CONTACT",
             address: "USA, California 20, First Avenue, California",
@@ -38,13 +40,20 @@ export const store = reactive({
             fax: "Fax: +1 212 375 24 14",
             email: "info@masterstudy.com"
         },
+    ],
+    pages: [
         {
             title: "PAGES",
+            firstPagesList: ["Blog", "Home", "Shortcodes"],
+            secondPagesList: ["Courses", "Membership A...", "Typography"],
         },
+    ],
+    blog: [
         {
             title: "BLOG",
         }
     ]
+
 })
 
 

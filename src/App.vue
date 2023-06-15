@@ -25,7 +25,7 @@ export default {
 <template>
   <PageHeader :nav_link="store.links" />
   <PageMain />
-  <PageFooter :footer_content="store.footerContent" />
+  <PageFooter :about="store.about" :contact="store.contact" :pages="store.pages" :blog="store.blog" />
 </template>
 
 <style lang="scss">
