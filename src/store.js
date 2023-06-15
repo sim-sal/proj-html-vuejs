@@ -51,6 +51,8 @@ export const store = reactive({
     blog: [
         {
             title: "BLOG",
+            firstBlogImg: "../../public/footer_img_1.jpeg",
+            secondBlogImg: "../../public/footer_img_2.jpeg"
         }
     ]
 

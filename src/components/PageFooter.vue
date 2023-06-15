@@ -55,6 +55,20 @@ export default {
 
                 <div class="col-3" v-for="content in blog">
                     <h5>{{ content.title }}</h5>
+
+                    <div class="blog-up">
+                        <img :src="`${content.firstBlogImg}`" alt="">
+                        <div class="blog-up-text">
+                            <h7>Our main target is to "Developing Yourself as a Leader"</h7>
+                            <span>- August 9, 2018</span>
+                        </div>
+                    </div>
+
+                    <div class="blog-down">
+                        <img :src="`${content.secondBlogImg}`" alt="">
+                        <h7>Those Other College Expenses You Aren't Thinking About</h7>
+                        <span>- June 3, 2015</span>
+                    </div>
                 </div>
 
             </div>
@@ -93,6 +107,29 @@ footer {
                             margin-left: -15px;
                         }
                     }
+                }
+
+                .blog-up,
+                .blog-down {
+                    display: flex;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    h7 {
+                        font-weight: bold;
+                    }
+
+                    span {
+                        font-size: 10px;
+                        color: gray;
+                    }
+                }
+
+                .blog-down {
+                    padding-top: 20px;
                 }
 
             }
